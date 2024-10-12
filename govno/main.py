@@ -261,7 +261,7 @@ def subfactorial(n):
     return a
 
 
-def arithm_mean(array): # среднее арифметическое
+def Arith(array): # среднее арифметическое
     res = 0
     for num in array:
         res += num
