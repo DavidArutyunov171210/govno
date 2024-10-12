@@ -236,54 +236,6 @@ def gcd(nums): #НОД
     return gon
 
 
-def sin(x):
-	return math.sin(x)
-
-
-def cos(x):
-	return math.cos(x)
-
-
-def tan(x):
-	return math.tan(x)
-
-
-def arcsin(x):
-	return math.asin(x)
-
-
-def arccos(x):
-	return math.acos(x)
-
-
-def arctan(x):
-	return math.atan(x)
-
-
-def sinh(x):
-	return math.sinh(x)
-
-
-def cosh(x):
-	return math.cosh(x)
-
-
-def tanh(x):
-	return math.tanh(x)
-
-
-def arcsinh(x):
-	return math.asinh(x)
-
-
-def arccosh(x):
-	return math.acosh(x)
-
-
-def arctanh(x):
-	return math.atanh(x)
-
-
 def factorial(a):
     i = 1
     for h in range(1, a + 1):
@@ -432,4 +384,107 @@ def zexp(a,b):
 def ztrig(a,b):
 	s = str(zabs(a, b)) + "(cos(" + str(zarg(a, b)) + ")+isin(" + str(zarg(a, b)) + "))"
 	return s
-    
+
+
+# тангенсы котангенсы и другая поебота
+def sin(x):
+	return math.sin(x)
+
+
+def cos(x):
+	return math.cos(x)
+
+
+def tan(x):
+	return math.tan(x)
+
+
+def ctg(x):
+	return 1 / tan(x)
+
+
+def arcsin(x):
+	return math.asin(x)
+
+
+def arccos(x):
+	return math.acos(x)
+
+
+def arctan(x):
+	return math.atan(x)
+
+
+def sinh(x):
+	return math.sinh(x)
+
+
+def cosh(x):
+	return math.cosh(x)
+
+
+def tanh(x):
+	return math.tanh(x)
+
+
+def arcsinh(x):
+	return math.asinh(x)
+
+
+def arccosh(x):
+	return math.acosh(x)
+
+
+def arctanh(x):
+	return math.atanh(x)
+
+# я добавил-------------------------------------------
+def sec(n):
+	return 1 / cos(n)
+
+
+def cosec(n):
+	return 1 / sin(n)
+
+
+def versin(n):
+	return 1 - cos(n)
+
+
+def vercos(n):
+	return 1 + cos(n)
+
+
+def crd(n):
+	return 2 * sin(n / 2)
+
+
+def coversin(n):
+	return 1 - sin(n)
+
+def covercos(n):
+	return 1 + sin(n)
+
+
+def hacoversin(n):
+	return (coversin(n) / 2)
+
+
+def hacovercos(n):
+	return (covercos(n) / 2)
+
+
+def haversin(n):
+	return versin(n) / 2
+
+
+def havercos(n):
+	return vercos(n) / 2
+
+
+def exsec(n):
+	return sec(n) - 1
+
+
+def exsc(n):
+	return cosec(n) - 1
