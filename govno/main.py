@@ -288,7 +288,7 @@ def sign(n): # знак числа n
 
 def isprime(n): # проверка на простоту числа n
     fl = True
-    for i in range(2, sqrt(n)):
+    for i in range(2, n ** 0.5):
         if n % i != 0:
             fl = False
             break
@@ -505,4 +505,4 @@ def exsc(n):
 #--------------------------------
 
 def gaussf(x):
-	return e ** (-x ** 2 / 2) / math.sqrt(2 * pi)
+	return e ** (-x ** 2 / 2) / (2 * pi) ** 0.5
