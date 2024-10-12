@@ -3,22 +3,26 @@ e = 2.71828182845904523536
 gamma = 0.57721566490153286060
 phi = 1.61803398874989484820
 
+
 def roud(a): # Не нужно
 	for i in range(len(a)):
 		for j in range(len(a[i])):
 			a[i][j] = round(a[i][j], 4)
 	return a
 
+
 def intfloat(x): # Не нужно
 	if x % 1 == 0:
 		x = int(x)
 	return x
+
 
 def dowith(a): # Не нужно
 	for i in range(len(a)):
 		for j in range(len(a[i])):
 			a[i][j] = intfloat(a[i][j])
 	return a
+
 
 def mget(): # Получение матрицы от пользователя
 	print("Элементы вводить через пробел!")
@@ -33,11 +37,13 @@ def mget(): # Получение матрицы от пользователя
 	r = dowith(r)
 	return r
 
+
 def ooooo(a, b): # Не нужно
 	c = 0
 	for i in range(len(a)):	
 		c += a[i] * b[i]
 	return c
+
 
 def mprint(a): # Вывод матрицы...
 	t = 0
