@@ -57,11 +57,11 @@ def mprint(a): # Вывод матрицы...
 			b[i][j] = (t - len(b[i][j]) - p) * " " + b[i][j] + p * " "
 
 	for i in range(len(b)):
-		o="[ "
+		o = "[ "
 		for j in range(len(b[i])):
-			o+=b[i][j]
-			o+=" "
-		o+="]"
+			o += b[i][j]
+			o += " "
+		o += "]"
 		print(o)
 
 
