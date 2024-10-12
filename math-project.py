@@ -1,6 +1,3 @@
-from copy import deepcopy
-import math
-
 pi = 3.14159265358979323846264338
 e = 2.71828182845904523536
 gamma = 0.57721566490153286060
@@ -186,7 +183,7 @@ def H(a): #Среднее гармоническое
     for i in a:
         h += 1 / i
     h = len(a)/h
- return h
+    return h
 
 
 def sigma(a): #Среднее квадратическое
@@ -334,7 +331,7 @@ def isprime(n): # проверка на простоту числа n
     return False
 
 
-def solvelin(a, b) # решает линейные уравнения ах+b=0
+def solvelin(a, b): # решает линейные уравнения ах+b=0
     return -b / a if a != 0 else 0
 
 
