@@ -243,6 +243,10 @@ def factorial(a):
     return i
 
 
+def C(k, n): # кво сочетаний
+	return factorial(n) / (factorial(k) * factorial(n - k))
+
+
 def subfactorial(n):
     a = 1
     for i in range(1, n + 1):
