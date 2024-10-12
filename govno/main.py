@@ -502,3 +502,7 @@ def exsec(n):
 
 def exsc(n):
 	return cosec(n) - 1
+#--------------------------------
+
+def gaussf(x):
+	return e ** (-x ** 2 / 2) / math.sqrt(2 * pi)
