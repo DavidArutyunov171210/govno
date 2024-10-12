@@ -211,7 +211,7 @@ def log(a, b): #Логарифм
  return math.log(b) / math.log(a)
 
 
-def AML(a): #Среднее логарифмическое
+def AML_mean(a): #Среднее логарифмическое
     h = 0
     for i in a:
         h += log(i)
@@ -253,7 +253,11 @@ def C(k, n): # кво сочетаний
 	return factorial(n) / (factorial(k) * factorial(n - k))
 
 
-def subfactorial(n):
+def A(k, n):
+	return factorial(n) / (factorial(n - k))
+
+
+def subfactorial(n): # cубфакториал
     a = 1
     for i in range(1, n + 1):
         a += (-1) ** i / factorial(i)
