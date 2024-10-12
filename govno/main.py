@@ -177,14 +177,14 @@ def mid(a): #Медиана
     return (d[l//2]+d[l//2-1])/2
 
 
-def G(a): #Среднее геометрическое
+def geom_mean(a): #Среднее геометрическое
     h = 1
     for i in a:
         h *= i
     return h ** (1 / len(a))
 
 
-def H(a): #Среднее гармоническое
+def harm_mean(a): #Среднее гармоническое
     h = 0
     for i in a:
         h += 1 / i
@@ -261,7 +261,7 @@ def subfactorial(n):
     return a
 
 
-def Arith(array): # среднее арифметическое
+def arithm_mean(array): # среднее арифметическое
     res = 0
     for num in array:
         res += num
